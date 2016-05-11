@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.com.weatherapp.DetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:id="@+id/location"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationdettxt"
+        android:id="@+id/placetxt"
+        android:layout_alignTop="@+id/location"
+        android:padding="10dp"
+        android:layout_toEndOf="@+id/location" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="New Text"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/location"
+        android:layout_alignParentStart="true"
+        android:background="#140202"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherimage"
+        android:minHeight="70dp"
+        android:minWidth="100dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/location"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tempdet"
+        android:layout_below="@+id/weatherimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:minHeight="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/weathertype"
+        android:layout_below="@+id/tempdet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maxtemp"
+        android:id="@+id/maxtemp"
+        android:layout_below="@+id/weathertype"
+        android:layout_toStartOf="@+id/weathertype"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/maxtemptxt"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/maxtemp"
+        android:layout_alignEnd="@+id/weatherimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mintemp"
+        android:id="@+id/mintemp"
+        android:layout_below="@+id/maxtemp"
+        android:layout_alignStart="@+id/maxtemp"
+        android:layout_marginTop="2dp"
+        android:layout_margin="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/mintemptxt"
+        android:layout_alignTop="@+id/mintemp"
+        android:layout_alignStart="@+id/maxtemptxt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:background="#140202"
+        android:layout_below="@+id/mintemp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feel"
+        android:id="@+id/feel"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/mintemp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/feeltxt"
+        android:minHeight="30dp"
+        android:layout_alignTop="@+id/feel"
+        android:layout_alignStart="@+id/mintemptxt"
+        android:layout_alignBottom="@+id/feel"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/humid"
+        android:id="@+id/humid"
+        android:layout_below="@+id/feel"
+        android:layout_alignStart="@+id/feel"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/humidtxt"
+        android:minHeight="30dp"
+        android:layout_below="@+id/feeltxt"
+        android:layout_alignStart="@+id/feeltxt"
+        android:layout_alignBottom="@+id/humid"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dew"
+        android:id="@+id/dew"
+        android:layout_below="@+id/humid"
+        android:layout_alignStart="@+id/humid"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/dewtxt"
+        android:textStyle="bold"
+        android:layout_above="@+id/press"
+        android:layout_alignStart="@+id/humidtxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/press"
+        android:id="@+id/press"
+        android:layout_below="@+id/dew"
+        android:layout_alignStart="@+id/dew"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/presstxt"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/press"
+        android:layout_alignStart="@+id/dewtxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clouds"
+        android:id="@+id/clouds"
+        android:layout_below="@+id/press"
+        android:layout_alignStart="@+id/press"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/cloudtxt"
+        android:textStyle="bold"
+        android:layout_above="@+id/wind"
+        android:layout_alignStart="@+id/presstxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wind"
+        android:id="@+id/wind"
+        android:layout_below="@+id/clouds"
+        android:layout_alignStart="@+id/clouds"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/windtxt"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/wind"
+        android:layout_alignStart="@+id/cloudtxt"
+        android:layout_marginTop="3dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageButtonprev"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/prev"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/wind"
+        android:layout_below="@+id/windtxt" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButtonnxt"
+        android:src="@drawable/nxt"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/imageButtonprev" />
+
+</RelativeLayout>

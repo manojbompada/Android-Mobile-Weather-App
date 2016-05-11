@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="textview1">Current Location:</string>
+    <string name="locationtxt" />
+    <string name="location">Current Location:</string>
+    <string name="locationdettxt" />
+    <string name="maxtemp">Max Temperature:</string>
+    <string name="mintemp">Min Temperature:</string>
+    <string name="feel">Feels Like:</string>
+    <string name="humid">Humidity:</string>
+    <string name="dew">Dewpoint:</string>
+    <string name="press">Pressure:</string>
+    <string name="clouds">Clouds:</string>
+    <string name="wind">Winds:</string>
+</resources>

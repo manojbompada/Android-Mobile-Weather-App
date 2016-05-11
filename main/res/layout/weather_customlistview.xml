@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#f4e5e5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/linearLayout2"
+        android:minHeight="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/adapterimageView">
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/time1"
+            android:layout_weight="0.02" />
+
+        <TextView
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/condition"
+            android:layout_weight="0.02"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/temptxt"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapterimageView"
+        android:layout_weight="0.02"
+        android:layout_marginTop="10dp"
+        android:minHeight="30dp"
+        android:minWidth="30dp" />
+
+</RelativeLayout>
